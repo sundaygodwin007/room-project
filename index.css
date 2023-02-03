@@ -1,0 +1,110 @@
+/* removed all space in the body and gave all text color gray */
+body {
+  margin: 0;
+  color: hsl(0, 0%, 63%);
+}
+
+/* gave all paragraph in the body a font size */
+body p {
+  font-size: 12px;
+}
+
+/* gave all the heading a black color and font type */
+body h1,
+h3 {
+  color: hsl(0, 0%, 0%);
+  font-family: "Spartan", sans-serif;
+}
+
+/* aligned all nav bar side by side and gave it all size padding */
+nav {
+  display: flex;
+  padding: 2rem;
+}
+
+/* gave the logo and the links in nav bar space */
+nav .logo-image {
+  padding-right: 3rem;
+}
+
+/* gave the liks a space between each other */
+nav .links a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* place all the header a grid */
+.combined-header {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+}
+
+/* made then sliding images a width of 100% and a viewing height */
+.combined-header .slider-1-image img {
+  width: 100%;
+  height: 65vh;
+}
+
+/* gave the texts a top and bottom space and also left and right */
+header .discover-innovative .texts {
+  padding: 4rem 3rem;
+}
+
+/* gave the text space between the the header paragraph and the shop now link */
+header .discover-innovative .texts p {
+  margin-bottom: 1.6rem;
+}
+
+/* gave the shop now a color of black */
+header .discover-innovative a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/* made the button a pointer */
+header .combined-header .btn button {
+  cursor: pointer;
+}
+
+/* styled the scrolling button */
+button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  /* margin-top: 0rem; */
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 10px;
+  width: 15%;
+}
+
+/* gave the parent div a relative */
+.combined {
+  position: relative;
+}
+
+/* then made the navebar absolute */
+nav {
+  position: absolute;
+}
+
+/* made the section a grid */
+section .combined-section {
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+}
+
+/* made the dark image in the section 100% */
+section .combined-section .dark-image img {
+  width: 100%;
+}
+
+/* gave the texts a space  */
+section .combined-section .text {
+  padding: 1rem 2rem;
+}
+
+/* made the dark image in the section 100% */
+section .combined-section .light-image img {
+  width: 100%;
+}
