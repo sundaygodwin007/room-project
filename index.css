@@ -1,110 +1,86 @@
-/* removed all space in the body and gave all text color gray */
+/* @media (max-width: 576px) { */
+/* removed the margins and added some few styling for the body */
 body {
   margin: 0;
-  color: hsl(0, 0%, 63%);
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-size: 10px;
+  font-family: "League Spartan", sans-serif;
 }
 
-/* gave all paragraph in the body a font size */
-body p {
-  font-size: 12px;
-}
-
-/* gave all the heading a black color and font type */
-body h1,
-h3 {
-  color: hsl(0, 0%, 0%);
-  font-family: "Spartan", sans-serif;
-}
-
-/* aligned all nav bar side by side and gave it all size padding */
-nav {
-  display: flex;
-  padding: 2rem;
-}
-
-/* gave the logo and the links in nav bar space */
-nav .logo-image {
-  padding-right: 3rem;
-}
-
-/* gave the liks a space between each other */
-nav .links a {
-  margin-right: 1rem;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-/* place all the header a grid */
-.combined-header {
-  display: grid;
-  grid-template-columns: 1fr 450px;
-}
-
-/* made then sliding images a width of 100% and a viewing height */
-.combined-header .slider-1-image img {
-  width: 100%;
-  height: 65vh;
-}
-
-/* gave the texts a top and bottom space and also left and right */
-header .discover-innovative .texts {
-  padding: 4rem 3rem;
-}
-
-/* gave the text space between the the header paragraph and the shop now link */
-header .discover-innovative .texts p {
-  margin-bottom: 1.6rem;
-}
-
-/* gave the shop now a color of black */
-header .discover-innovative a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-/* made the button a pointer */
-header .combined-header .btn button {
-  cursor: pointer;
-}
-
-/* styled the scrolling button */
-button {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  /* margin-top: 0rem; */
-  font-size: 3rem;
-  cursor: pointer;
-  padding: 10px;
-  width: 15%;
-}
-
-/* gave the parent div a relative */
+/* gave the parent div a relation */
 .combined {
   position: relative;
 }
 
-/* then made the navebar absolute */
-nav {
+/* added absolute and adding to the logo */
+.logo {
+  padding-top: 2rem;
   position: absolute;
+  top: 0;
+  /* right: 0; */
+  bottom: 0;
+  /* left: 0; */
 }
 
-/* made the section a grid */
-section .combined-section {
-  display: grid;
-  grid-template-columns: 300px 1fr 300px;
+/* flexed the nav  logo and the nav links */
+nav {
+  display: flex;
 }
 
-/* made the dark image in the section 100% */
-section .combined-section .dark-image img {
+/* stopped the link from appering on mobile screen */
+nav .links {
+  display: none;
+}
+
+/* made the sliding header occupy all spaces */
+header .slider-1-image img {
   width: 100%;
 }
 
-/* gave the texts a space  */
-section .combined-section .text {
-  padding: 1rem 2rem;
+/* gave the section and article spaces */
+section,
+article {
+  padding: 2rem 3rem;
 }
 
-/* made the dark image in the section 100% */
-section .combined-section .light-image img {
+/* gave the section text header 1 some styles */
+section .texts h1 {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 500;
+  color: #070000;
+}
+
+/* gave the section and article paragraph a gray color and font-size */
+section,
+article p {
+  color: rgb(135, 133, 133);
+  font-size: 0.8rem;
+}
+
+/* gave the text in the section a margin bottom */
+section .texts {
+  margin-bottom: 2rem;
+}
+
+/* have the shop now link a style*/
+.link a {
+  color: #070000;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 1.3rem;
+}
+
+/* made the dark image occupy all width and also gave it some space at the top */
+.dark-image img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* made the light image occupy all width */
+.light-image img {
   width: 100%;
 }
+/* } */
