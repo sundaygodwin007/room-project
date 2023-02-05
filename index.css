@@ -1,109 +1,161 @@
-/* @media (max-width: 576px) { */
-/* removed the margins and added some few styling for the body */
 body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: black;
-  font-size: 10px;
-  font-family: "League Spartan", sans-serif;
 }
 
-/* gave the parent div a relation */
 .combined {
   position: relative;
 }
 
-/* added absolute and adding to the logo */
-.logo-image {
-  padding-top: 2rem;
-  position: absolute;
-  top: 0;
-  /* right: 0; */
-  bottom: 0;
-  /* left: 0; */
-}
-
-/* flexed the nav  logo and the nav links */
 nav {
   display: flex;
+  margin-right: 2rem;
+  position: absolute;
 }
 
-/* stopped the link from appering on mobile screen */
-nav .links {
+nav a {
   display: none;
 }
 
-header {
-  position: relative;
+header .desktop-image-slider-1 img {
+  display: none;
 }
 
-/* made the sliding header occupy all spaces */
-header .slider-1-image img {
+header #mobile {
+  display: inherit;
   width: 100%;
 }
 
-/* gave the section and article spaces */
-section,
-article {
-  padding: 2rem 3rem;
-}
-
-.btn {
-  display: flex;
-  text-align: end;
-  position: absolute;
-  /* top: 0; */
-  right: 0;
-  bottom: 0;
-  /* left: 0; */
-}
-
-button {
-  border: none;
-  background-color: #070000;
-  color: white;
-  padding: 1.1rem;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* gave the section text header 1 some styles */
-section .texts h1 {
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 500;
-  color: #070000;
-}
-
-/* gave the section and article paragraph a gray color and font-size */
-section,
-article p {
-  color: rgb(135, 133, 133);
-  font-size: 0.8rem;
-}
-
-/* gave the text in the section a margin bottom */
-section .texts {
-  margin-bottom: 2rem;
-}
-
-/* have the shop now link a style*/
-.link a {
-  color: #070000;
+header .header-text a {
   text-decoration: none;
-  margin-right: 1.5rem;
-  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
 }
 
-/* made the dark image occupy all width and also gave it some space at the top */
-.dark-image img {
-  width: 100%;
-  margin-top: 2rem;
+.text-connect {
+  padding: 3rem;
 }
 
-/* made the light image occupy all width */
-.light-image img {
+.header-text p {
+  margin-bottom: 3rem;
+}
+
+article .dark-image img {
   width: 100%;
 }
-/* } */
+
+article .about-furniture {
+  padding: 3rem;
+}
+
+article .light-image img {
+  width: 100%;
+}
+
+/*  */
+
+@media (min-width: 767px) {
+  /* removed all spaces from the content */
+  body {
+    margin: 0;
+  }
+
+  /* gave the parent div and the nav bar a relative connection */
+  .combined {
+    position: relative;
+  }
+
+  /* flexed  the navbar */
+  nav {
+    display: flex;
+    margin-right: 2rem;
+    position: absolute;
+  }
+
+  /* removed all text decoration from the link */
+  nav a {
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* header styling */
+  header {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-gap: 2rem;
+  }
+
+  header .header-text {
+    padding: 40px;
+  }
+
+  /* gave the sliding image a fitting */
+  header .desktop-image-slider-1 img {
+    display: inherit;
+    width: 100%;
+    height: 70vh;
+  }
+
+  /* removed the mobile image from appering */
+  header #mobile {
+    display: none;
+  }
+
+  /* gave the texts a font size */
+  header .text {
+    font-size: 1rem;
+  }
+
+  /* gave the button a background-color, color and padding
+  button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 19px;
+    cursor: pointer;
+  }
+
+  /*  */
+  /* header .btn {
+    background-color: rgb(0, 0, 0);
+    width: 20%;
+    margin-top: 9.4rem;
+    height: 10%;
+  } */
+
+  /* .text-connect .btn {
+    position: relative;
+  } */
+
+  /* .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 57%;
+  } */
+  .text-connect {
+    padding: 0;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    /* margin-top: -8rem; */
+  }
+
+  article .about-furniture h1,
+  p {
+    padding: 0 1rem;
+  }
+
+  article .dark-image img {
+    width: 100%;
+  }
+
+  article .about-furniture {
+    padding: 0;
+  }
+
+  article .light-image img {
+    width: 100%;
+  }
+}
