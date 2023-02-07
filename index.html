@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="index.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,72 +20,188 @@
     <title>Room</title>
   </head>
   <body>
-    <div class="combined">
-      <nav>
-        <div class="logo-image">
-          <img src="./image/logo.svg" alt="logo picture" />
-        </div>
-        <div>
-          <a href="#">home</a>
-          <a href="#">shop</a>
-          <a href="#">about</a>
-          <a href="#">contact</a>
-        </div>
-      </nav>
+    <nav>
+      <!-- <nav class="navbar"> -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><img src="./image/logo.svg" alt="logo image"
+          /></a>
 
-      <header>
-        <div class="desktop-image-slider-1">
-          <img src="./image/desktop-image-hero-1.jpg" alt="picture" />
-          <img
-            id="mobile"
-            src="./image/desktop-image-hero-1.jpg"
-            alt="picture"
-          />
-        </div>
-
-        <div class="text-connect">
-          <div class="header-text">
-            <h1>Discover innovative ways to decorate</h1>
-            <p>
-              We provide unmatched qualityc comfort and style for property
-              owners across the country our expert combine form and function in
-              bringing your vision to life. Create a room in your own style with
-              our collection and make your property a reflection of you and what
-              you love.
-            </p>
-
-            <a href="#">SHOP NOW<img src="./image/icon-arrow.svg" alt="" /></a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled">Disabled</a>
+            </div>
           </div>
-          <!-- <div class="btn">
-            <button><</button>
-            <button>></button>
-          </div> -->
         </div>
-      </header>
-      <article>
-        <div class="dark-image">
-          <img src="./image/image-about-dark.jpg" alt="black chair image" />
-        </div>
+        <!-- </nav> -->
+      </nav>
+    </nav>
 
-        <div class="about-furniture">
-          <h1>ABOUT OUR FURNITURE</h1>
-          <p>
-            Our multifunctional collection blends design and function, to suit
-            your individual taste. make each room unique or pick a cohesive
-            theme that bests express your intrest and what impress you. find the
-            furniture pieces you need from traditional to contempoary styles or
-            anything in between. Product specialist are avaliable to help create
-            your dream space.
-          </p>
-        </div>
+    <header>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <!-- carousel 1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="carou-image col-12 col-lg-7">
+                <img
+                  src="./image/desktop-image-hero-1.jpg"
+                  class="w-100"
+                  alt="..."
+                  id="desktop"
+                />
+                <img
+                  src="./image/mobile-image-hero-1.jpg"
+                  alt="mobile image"
+                  id="mobile"
+                />
+              </div>
 
-        <div class="light-image">
-          <img
-            src="./image/image-about-light.jpg"
-            alt="light furniture image"
-          />
+              <div class="text col-12 col-lg-5">
+                <h1>Discover innovative ways to decorate</h1>
+                <p>
+                  We provide unmatched qualityc comfort and style for property
+                  owners across the country our expert combine form and function
+                  in bringing your vision to life. Create a room in your own
+                  style with our collection and make your property a reflection
+                  of you and what you love.
+                </p>
+                <a href="#">SHOP NOW <img src="./image/icon-arrow.svg" /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="carou-image col-12 col-lg-7">
+                <img
+                  src="./image/desktop-image-hero-2.jpg"
+                  class="w-100"
+                  alt="..."
+                  id="desktop"
+                />
+                <img
+                  src="./image/mobile-image-hero-2.jpg"
+                  alt="mobile image"
+                  id="mobile"
+                />
+              </div>
+              <div class="text col-12 col-lg-5">
+                <h1>Discover innovative ways to decorate</h1>
+                <p>
+                  We provide unmatched qualityc comfort and style for property
+                  owners across the country our expert combine form and function
+                  in bringing your vision to life. Create a room in your own
+                  style with our collection and make your property a reflection
+                  of you and what you love.
+                </p>
+                <a href="#">SHOP NOW <img src="./image/icon-arrow.svg" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="carou-image col-12 col-lg-7">
+                <img
+                  src="./image/desktop-image-hero-3.jpg"
+                  class="w-100"
+                  alt="..."
+                  id="desktop"
+                />
+                <img
+                  src="./image/mobile-image-hero-3.jpg"
+                  alt="mobile image"
+                  id="mobile"
+                />
+              </div>
+              <div class="text col-12 col-lg-5">
+                <h1>Discover innovative ways to decorate</h1>
+                <p>
+                  We provide unmatched qualityc comfort and style for property
+                  owners across the country our expert combine form and function
+                  in bringing your vision to life. Create a room in your own
+                  style with our collection and make your property a reflection
+                  of you and what you love.
+                </p>
+                <a href="#">SHOP NOW <img src="./image/icon-arrow.svg" /></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </article>
-    </div>
+        <!-- <div class="row">
+          <div class="col-12 col-lg-3">
+            <img
+              src="./image/image-about-dark.jpg"
+              class="w-100"
+              alt="dark chair image"
+            />
+          </div>
+          <div class="col-12 col-lg-6 p-2">
+            <h3>ABOUT OUR FURNITURE</h3>
+            <p>
+              Our multifunctional collection blends design and function, to suit
+              your individual taste. make each room unique or pick a cohesive
+              theme that bests express your intrest and what impress you. find
+              the furniture pieces you need from traditional to contempoary
+              styles or anything in between. Product specialist are avaliable to
+              help create your dream space.
+            </p>
+          </div>
+          <div class="col-12 col-lg-3">
+            <img
+              src="./image/image-about-light.jpg"
+              class="w-100"
+              alt="dark chair image"
+            />
+          </div>
+        </div> -->
+        <button
+          class="btn-1"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+          w-50%
+        >
+          <img src="./image/icon-angle-left.svg" alt="" class="bg-black p-3" />
+          <!-- <span class="visually-hidden">Previous</span> -->
+        </button>
+        <button
+          class="btn-2"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+          w-50%
+        >
+          <img src="./image/icon-angle-right.svg" alt="" class="bg-black p-3" />
+          <!-- <span class="visually-hidden">Next</span> -->
+        </button>
+      </div>
+    </header>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
+<!-- <h1>ABOUT OUR FURNITURE</h1>
+<p>
+  Our multifunctional collection blends design and function, to suit your
+  individual taste. make each room unique or pick a cohesive theme that bests
+  express your intrest and what impress you. find the furniture pieces you need
+  from traditional to contempoary styles or anything in between. Product
+  specialist are avaliable to help create your dream space.
+</p> -->
