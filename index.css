@@ -52,14 +52,15 @@ header .text a {
     background-color: rgba(0, 145, 255, 0.5);
   }
 
-  header .carousel-inner {
+  header .carousel-inner button #btnn {
     position: relative;
   }
 
   button .btn-1,
   .btn-2 {
     position: absolute;
-    top: 0;
+    top: 43%;
+    right: 0;
   }
 
   header .carou-image #desktop {
