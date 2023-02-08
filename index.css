@@ -1,3 +1,7 @@
+body {
+  color: hsl(0, 0%, 63%);
+}
+
 nav {
   padding: 1rem 2rem;
   z-index: 9;
@@ -9,6 +13,7 @@ nav .navbar-nav a {
 
 nav .navbar-brand {
   margin: auto;
+  margin-right: 1.5rem;
 }
 
 header {
@@ -22,18 +27,19 @@ header .carou-image img {
   height: 75vh;
 }
 
+header .text {
+  padding: 4.5rem 3rem;
+}
+
 header .text h1 {
   line-height: 2rem;
   margin-bottom: 2.5rem;
   font-weight: 600;
+  color: hsl(0, 0%, 27%);
 }
 
 header .text p {
   margin-bottom: 2.5rem;
-}
-
-header .text {
-  padding: 4.5rem 3rem;
 }
 
 header .text a {
@@ -51,11 +57,89 @@ section {
   top: 77%;
 }
 
+section .text {
+  padding: 2rem 2rem;
+}
+
+section .row .text h4 {
+  font-size: 1rem;
+  color: hsl(0, 0%, 27%);
+}
+
+section .row .text p {
+  font-size: 12px;
+}
+
+section .row #image {
+  width: 100%;
+  background-size: cover;
+}
+
+@media (min-width: 768px) and (max-width: 993px) {
+  nav .nav-link {
+    text-align: center;
+    background-color: rgba(0, 145, 255, 0.5);
+  }
+
+  nav .navbar-brand {
+    margin: auto;
+  }
+
+  header .text {
+    padding: 4.5rem 3rem;
+  }
+
+  header .text h1 {
+    font-size: 3rem;
+    padding: 0 3rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 27%);
+  }
+
+  header .text p {
+    margin-bottom: 2.5rem;
+  }
+
+  header .text a {
+    text-decoration: none;
+    color: hsl(0, 0%, 27%);
+    letter-spacing: 8px;
+  }
+
+  section {
+    position: absolute;
+    top: 150%;
+  }
+
+  section .text {
+    padding: 2rem 3rem;
+  }
+
+  section .row .text h4 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 3rem;
+    color: hsl(0, 0%, 27%);
+  }
+
+  section .row .text p {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 767px) {
   nav .nav-link {
     text-align: center;
     background-color: rgba(0, 145, 255, 0.5);
   }
+
+  nav .navbar-brand {
+    margin: auto;
+  }
+
   header {
     position: absolute;
   }
@@ -83,5 +167,13 @@ section {
   section {
     position: absolute;
     top: 150%;
+  }
+
+  section .row .text h4 {
+    font-size: 1.2rem;
+  }
+
+  section .row .text p {
+    font-size: 15px;
   }
 }
